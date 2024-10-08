@@ -28,7 +28,7 @@ Seu serviço recebe uma chamada para determinar quais modalidades de empréstimo
     "cpf": "275.484.389-23",
     "nome": "Nome exemplo",
     "renda": 7000.00,
-    "localização": "SP"
+    "localizacao": "SP"
 }
 ```
 
@@ -41,19 +41,19 @@ HTTP/1.1 200 Ok
 
 ```json
 {
-    "customer": "Nome exemplo",
-    "loans": [
+    "nome": "Nome exemplo",
+    "emprestimos": [
         {
-            "type": "PERSONAL",
-            "interest_rate": 4
+            "tipo": "PERSONAL",
+            "taxa_juros": 4
         },
         {
-            "type": "GUARANTEED",
-            "interest_rate": 3
+            "tipo": "GUARANTEED",
+            "taxa_juros": 3
         },
         {
-            "type": "CONSIGNMENT",
-            "interest_rate": 2
+            "tipo": "CONSIGNMENT",
+            "taxa_juros": 2
         }
     ]
 }
