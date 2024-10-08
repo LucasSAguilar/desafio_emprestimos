@@ -2,7 +2,7 @@
 Link: https://github.com/backend-br/desafios/blob/master/loans/PROBLEM.md
 
 
-Seu desafio será implementar um serviço que determine quais modalidades de empréstimo uma pessoa tem acesso.
+O desafio é implementar um serviço que determine quais modalidades de empréstimo uma pessoa tem acesso.
 
 ## Exemplo
 
@@ -24,11 +24,11 @@ Seu serviço recebe uma chamada para determinar quais modalidades de empréstimo
 
 ```json
 {
-    "age": 26,
+    "idade": 26,
     "cpf": "275.484.389-23",
-    "name": "Vuxaywua Zukiagou",
-    "income": 7000.00,
-    "location": "SP"
+    "nome": "Nome exemplo",
+    "renda": 7000.00,
+    "localização": "SP"
 }
 ```
 
@@ -41,7 +41,7 @@ HTTP/1.1 200 Ok
 
 ```json
 {
-    "customer": "Vuxaywua Zukiagou",
+    "customer": "Nome exemplo",
     "loans": [
         {
             "type": "PERSONAL",
@@ -61,7 +61,7 @@ HTTP/1.1 200 Ok
 
 ## Requisitos
 
-- Conceder o empréstimo pessoal se o salário do cliente for igual ou inferior a R$ 3000.
+- Conceder o empréstimo pessoal se o salário do cliente for inferior a R$ 3000.
 - Conceder o empréstimo pessoal se o salário do cliente estiver entre R$ 3000 e R$ 5000, se o cliente tiver menos de 30
   anos e residir em São Paulo (SP).
 - Conceder o empréstimo consignado se o salário do cliente for igual ou superior a R$ 5000.

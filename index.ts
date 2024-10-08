@@ -1,7 +1,9 @@
-import express from "express";
+import express, { json } from "express";
 import rotasEmprestimos from "./routes/emprestimos.js";
 const app = express();
 const PORT: number = 3000;
+
+app.use(json())
 
 rotasEmprestimos(app)
 

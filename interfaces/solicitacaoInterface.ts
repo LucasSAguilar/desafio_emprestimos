@@ -3,7 +3,7 @@ interface solicitacao {
   cpf: string;
   nome: string;
   renda: number;
-  localização: string;
+  localizacao: string;
 }
 
 export default solicitacao
